@@ -16,7 +16,7 @@ primarly intended to be used in logrotate's 'prerotate'-section like
         delaycompress
         sharedscripts
         prerotate
-            /usr/local/sbin/anonyme.py $1
+            /usr/local/sbin/anonyme.py -CC $1
         endscript
         postrotate
             /usr/lib/rsyslog/rsyslog-rotate
